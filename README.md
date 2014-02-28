@@ -1,7 +1,7 @@
 # Prosta aplikacja z użyciem Backbone
 
 Przykładowa aplikacja w stylu: Single Page Application.
-Demonstracja jak łatwo można stworzyć pełno prawną aplikację.
+Demonstracja jak łatwo można stworzyć w pełni działającą aplikację SPA.
 
 ## Budowa aplikacji
 
@@ -10,7 +10,12 @@ Demonstracja jak łatwo można stworzyć pełno prawną aplikację.
 ├── index.html
 ├── scripts
 │   ├── app.js
+│   ├── collections
+│   │   ├── AbstractCollection.js
+│   │   └── MenuCollection.js
 │   ├── main.js
+│   ├── models
+│   │   └── MenuItem.js
 │   ├── router.js
 │   ├── vendor
 │   │   ├── backbone
@@ -23,17 +28,23 @@ Demonstracja jak łatwo można stworzyć pełno prawną aplikację.
 │   │   └── underscore
 │   │       └── underscore.js
 │   └── views
-│       ├── View.js
+│       ├── AbstractView.js
+│       ├── PageView.js
+│       ├── common
+│       │   └── MenuView.js
 │       └── pages
 │           ├── AboutView.js
 │           ├── ContactView.js
 │           └── HomeView.js
 └── templates
-    ├── aboutTemplate.html
-    ├── contactTemplate.html
-    └── homeTemplate.html
+    ├── common
+    │   └── menuTemplate.html
+    └── pages
+        ├── aboutTemplate.html
+        ├── contactTemplate.html
+        └── homeTemplate.html
 
-9 directories, 17 files
+14 directories, 23 files
 </pre>
 
 ## Biblioteki
@@ -43,15 +54,7 @@ Demonstracja jak łatwo można stworzyć pełno prawną aplikację.
 * [Require.js][3]
 * [Underscore.js][4]
 
-## Możliwości & Plany
-
-Do aktualnej aplikacji warto dorzucić Backbone [Marionette][5],
-aby nasza aplikacja nabrała więcej możliwości, do czego jesteśmy
-przyzwyczajeni, tworząc aplikacje w JavaScript.
-
-
 [1]: http://backbonejs.org/
 [2]: http://jquery.com/
 [3]: http://requirejs.org/
 [4]: http://underscorejs.org/
-[5]: http://marionettejs.com/

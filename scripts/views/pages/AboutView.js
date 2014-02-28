@@ -1,18 +1,25 @@
 define([
-  'views/View',
-  'text!templates/aboutTemplate.html'
-], function (View, aboutTemplate) {
-  "use strict";
+    'underscore',
+    'views/PageView',
+    'views/common/MenuView',
+    'text!templates/pages/aboutTemplate.html'
+], function (_, PageView, MenuView, aboutTemplate) {
+    'use strict';
 
-  var AboutView = View.extend({
-    initialize: function () {
-      console.log('AboutView');
-      this.setTemplate();
-      View.prototype.initialize.call(this);
-    },
-    setTemplate: function (settings) {
-      this.template = _.template(aboutTemplate, settings);
-    }
-  });
-  return AboutView;
+    var AboutView = PageView.extend({
+        template: null,
+
+        initialize: function () {
+            console.info('new AboutView');
+            this.render();
+            new MenuView();
+        },
+
+        render: function () {
+            this.template = _.template(aboutTemplate);
+            PageView.prototype.render.call(this);
+        }
+    });
+
+    return AboutView;
 });

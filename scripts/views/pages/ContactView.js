@@ -1,18 +1,25 @@
 define([
-  'views/View',
-  'text!templates/contactTemplate.html'
-], function (View, contactTemplate) {
-  "use strict";
+    'underscore',
+    'views/PageView',
+    'views/common/MenuView',
+    'text!templates/pages/contactTemplate.html'
+], function (_, PageView, MenuView, contactTemplate) {
+    'use strict';
 
-  var ContactView = View.extend({
-    initialize: function () {
-      console.log('ContactView');
-      this.setTemplate();
-      View.prototype.initialize.call(this);
-    },
-    setTemplate: function (settings) {
-      this.template = _.template(contactTemplate, settings);
-    }
-  });
-  return ContactView;
+    var ContactView = PageView.extend({
+        template: null,
+
+        initialize: function () {
+            console.info('new ContactView');
+            this.render();
+            new MenuView();
+        },
+
+        render: function () {
+            this.template = _.template(contactTemplate);
+            PageView.prototype.render.call(this);
+        }
+    });
+
+    return ContactView;
 });

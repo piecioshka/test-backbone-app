@@ -1,9 +1,9 @@
 define([
-  'router'
+    'router'
 ], function (Router) {
-  'use strict';
+    'use strict';
 
-  return function () {
-    Router.initialize();
-  };
+    return function () {
+        Router.initialize();
+    };
 });

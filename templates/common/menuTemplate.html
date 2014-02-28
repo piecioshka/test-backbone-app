@@ -1,0 +1,7 @@
+<ul>
+    <% menu.each(function (item) { %>
+        <li>
+            <a href="<%= item.get('href') %>"><%= item.get('name') %></a>
+        </li>
+    <% }); %>
+</ul>
