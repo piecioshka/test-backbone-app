@@ -1,6 +1,6 @@
 define([
-    'collections/AbstractCollection',
-    'models/MenuItem'
+    'core/collections/AbstractCollection',
+    'core/models/MenuItem'
 ], function (AbstractCollection, MenuItem) {
     "use strict";
 

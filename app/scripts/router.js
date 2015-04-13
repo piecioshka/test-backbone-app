@@ -1,8 +1,8 @@
 define([
     'backbone',
-    'views/pages/HomeView',
-    'views/pages/AboutView',
-    'views/pages/ContactView'
+    'core/views/pages/HomeView',
+    'core/views/pages/AboutView',
+    'core/views/pages/ContactView'
 ], function (Backbone, HomeView, AboutView, ContactView) {
     'use strict';
 

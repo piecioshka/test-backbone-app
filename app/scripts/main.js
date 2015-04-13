@@ -1,11 +1,17 @@
 require.config({
     paths: {
-        templates: '../templates',
         underscore: 'vendor/underscore/underscore',
         jquery: 'vendor/jquery/jquery',
         backbone: 'vendor/backbone/backbone',
         text: 'vendor/require/text'
     },
+
+    map: {
+        '*': {
+            templates: '../../../../templates'
+        }
+    },
+
     shim: {
         backbone: {
             deps: ['underscore', 'jquery'],

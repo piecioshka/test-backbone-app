@@ -1,5 +1,5 @@
 define([
-    'views/AbstractView'
+    'core/views/AbstractView'
 ], function (AbstractView) {
     'use strict';
 

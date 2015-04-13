@@ -1,7 +1,7 @@
 define([
     'underscore',
-    'views/PageView',
-    'views/common/MenuView',
+    'core/views/PageView',
+    'core/views/common/MenuView',
     'text!templates/pages/aboutTemplate.html'
 ], function (_, PageView, MenuView, aboutTemplate) {
     'use strict';

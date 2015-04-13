@@ -1,7 +1,7 @@
 define([
     'underscore',
-    'collections/MenuCollection',
-    'views/AbstractView',
+    'core/collections/MenuCollection',
+    'core/views/AbstractView',
     'text!templates/common/menuTemplate.html'
 ], function (_, MenuCollection, AbstractView, menuTemplate) {
     "use strict";
