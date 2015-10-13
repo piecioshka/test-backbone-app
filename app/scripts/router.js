@@ -1,34 +1,34 @@
-define([
-    'backbone',
-    'core/views/pages/HomeView',
-    'core/views/pages/AboutView',
-    'core/views/pages/ContactView'
-], function (Backbone, HomeView, AboutView, ContactView) {
+define(function (require) {
     'use strict';
+
+    var Backbone = require('backbone');
+    var HomeView = require('core/views/pages/HomeView');
+    var AboutView = require('core/views/pages/AboutView');
+    var ContactView = require('core/views/pages/ContactView');
 
     var AppRouter = Backbone.Router.extend({
         routes: {
-            '!/about':      'showAbout',
-            '!/contact':    'showContact',
-            '!/home':       'showHome'
+            '!/about': 'showAbout',
+            '!/contact': 'showContact',
+            '!/home': 'showHome'
         },
 
         showHome: function () {
-            new HomeView();
+            return new HomeView();
         },
-        
+
         showAbout: function () {
-            new AboutView();
+            return new AboutView();
         },
-        
+
         showContact: function () {
-            new ContactView();
+            return new ContactView();
         }
     });
 
     return {
         initialize: function () {
-            new AppRouter();
+            var router = new AppRouter();
 
             Backbone.history.start();
 
@@ -37,6 +37,8 @@ define([
                     trigger: true
                 });
             }
+
+            return router;
         }
-    }
+    };
 });

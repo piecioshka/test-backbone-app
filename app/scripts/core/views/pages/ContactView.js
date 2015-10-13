@@ -1,18 +1,19 @@
-define([
-    'underscore',
-    'core/views/PageView',
-    'core/views/common/MenuView',
-    'text!templates/pages/contactTemplate.html'
-], function (_, PageView, MenuView, contactTemplate) {
+define(function (require) {
     'use strict';
+
+    var _ = require('underscore');
+    var PageView = require('core/views/PageView');
+    var MenuView = require('core/views/common/MenuView');
+    var contactTemplate = require('text!templates/pages/contactTemplate.html');
 
     var ContactView = PageView.extend({
         template: null,
+        menuView: null,
 
         initialize: function () {
-            console.info('new ContactView');
             this.render();
-            new MenuView();
+
+            this.menuView = new MenuView();
         },
 
         render: function () {

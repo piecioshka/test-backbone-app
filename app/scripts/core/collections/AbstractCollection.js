@@ -1,11 +1,9 @@
-define([
-    'backbone'
-], function (Backbone) {
-    "use strict";
+define(function (require) {
+    'use strict';
 
-    var AbstractCollection = Backbone.Collection.extend({
+    var Backbone = require('backbone');
 
-    });
+    var AbstractCollection = Backbone.Collection.extend({});
 
     return AbstractCollection;
 });

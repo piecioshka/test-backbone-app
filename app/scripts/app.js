@@ -1,9 +1,7 @@
-define([
-    'router'
-], function (Router) {
+define(function (require) {
     'use strict';
 
-    return function () {
-        Router.initialize();
-    };
+    var Router = require('router');
+
+    Router.initialize();
 });

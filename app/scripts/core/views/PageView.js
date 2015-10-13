@@ -1,7 +1,7 @@
-define([
-    'core/views/AbstractView'
-], function (AbstractView) {
+define(function (require) {
     'use strict';
+
+    var AbstractView = require('core/views/AbstractView');
 
     var PageView = AbstractView.extend({
         el: '#content'

@@ -1,0 +1,26 @@
+{
+    "private": true,
+    "scripts": {
+        "lint": "eslint app/scripts/ --ignore-pattern app/scripts/vendor/; exit 0"
+    },
+    "devDependencies": {
+        "eslint": "^1.6.0",
+        "eslint-config-piecioshka": "^1.0.7"
+    },
+    "eslintConfig": {
+        "extends": "piecioshka",
+        "env": {
+            "amd": true
+        },
+        "ecmaFeatures": {
+            "modules": false
+        },
+        "rules": {
+            "prefer-arrow-callback": [0],
+            "global-require": [0],
+            "no-var": [0],
+            "strict": [2, "function"],
+            "object-shorthand": [0]
+        }
+    }
+}

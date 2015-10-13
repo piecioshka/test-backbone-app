@@ -1,12 +1,12 @@
-define([
-    'backbone'
-], function (Backbone) {
-    "use strict";
+define(function (require) {
+    'use strict';
+
+    var Backbone = require('backbone');
 
     var MenuItem = Backbone.Model.extend({
         defaults: {
             name: 'no name',
-            href: ""
+            href: ''
         }
     });
 

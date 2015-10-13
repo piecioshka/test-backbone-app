@@ -5,7 +5,7 @@ Demonstracja jak łatwo można stworzyć w pełni działającą aplikację SPA.
 
 ## Budowa aplikacji
 
-<pre>
+```
 ├── README.md
 ├── index.html
 ├── scripts
@@ -45,16 +45,11 @@ Demonstracja jak łatwo można stworzyć w pełni działającą aplikację SPA.
         └── homeTemplate.html
 
 14 directories, 23 files
-</pre>
+```
 
 ## Biblioteki
 
-* [Backbone.js][1]
-* [jQuery.js][2]
-* [Require.js][3]
-* [Underscore.js][4]
-
-[1]: http://backbonejs.org/
-[2]: http://jquery.com/
-[3]: http://requirejs.org/
-[4]: http://underscorejs.org/
+* [Backbone.js](http://backbonejs.org/)
+* [jQuery.js](http://jquery.com/)
+* [Require.js](http://requirejs.org/)
+* [Underscore.js](http://underscorejs.org/)

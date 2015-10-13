@@ -1,4 +1,6 @@
 require.config({
+    baseUrl: './scripts/',
+
     paths: {
         underscore: 'vendor/underscore/underscore',
         jquery: 'vendor/jquery/jquery',
@@ -8,7 +10,7 @@ require.config({
 
     map: {
         '*': {
-            templates: '../../../../templates'
+            templates: 'core/../../templates'
         }
     },
 
@@ -17,19 +19,17 @@ require.config({
             deps: ['underscore', 'jquery'],
             exports: 'Backbone'
         },
+
         underscore: {
             exports: '_'
         },
+
         jquery: {
             exports: '$'
         }
-    }
-});
+    },
 
-require([
-    'app'
-], function (App) {
-    'use strict';
-
-    new App();
+    deps: [
+        './app'
+    ]
 });

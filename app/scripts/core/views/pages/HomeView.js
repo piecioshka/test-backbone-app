@@ -1,18 +1,19 @@
-define([
-    'underscore',
-    'core/views/PageView',
-    'core/views/common/MenuView',
-    'text!templates/pages/homeTemplate.html'
-], function (_, PageView, MenuView, homeTemplate) {
+define(function (require) {
     'use strict';
+
+    var _ = require('underscore');
+    var PageView = require('core/views/PageView');
+    var MenuView = require('core/views/common/MenuView');
+    var homeTemplate = require('text!templates/pages/homeTemplate.html');
 
     var HomeView = PageView.extend({
         template: null,
+        menuView: null,
 
         initialize: function () {
-            console.info('new HomeView');
             this.render();
-            new MenuView();
+
+            this.menuView = new MenuView();
         },
 
         render: function () {
