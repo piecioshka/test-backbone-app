@@ -6,45 +6,49 @@ Demonstracja jak łatwo można stworzyć w pełni działającą aplikację SPA.
 ## Budowa aplikacji
 
 ```
+.
 ├── README.md
-├── index.html
-├── scripts
-│   ├── app.js
-│   ├── collections
-│   │   ├── AbstractCollection.js
-│   │   └── MenuCollection.js
-│   ├── main.js
-│   ├── models
-│   │   └── MenuItem.js
-│   ├── router.js
-│   ├── vendor
-│   │   ├── backbone
-│   │   │   └── backbone.js
-│   │   ├── jquery
-│   │   │   └── jquery.js
-│   │   ├── require
-│   │   │   ├── require.js
-│   │   │   └── text.js
-│   │   └── underscore
-│   │       └── underscore.js
-│   └── views
-│       ├── AbstractView.js
-│       ├── PageView.js
+├── app
+│   ├── index.html
+│   ├── scripts
+│   │   ├── app.js
+│   │   ├── core
+│   │   │   ├── collections
+│   │   │   │   ├── AbstractCollection.js
+│   │   │   │   └── MenuCollection.js
+│   │   │   ├── models
+│   │   │   │   └── MenuItem.js
+│   │   │   └── views
+│   │   │       ├── AbstractView.js
+│   │   │       ├── PageView.js
+│   │   │       ├── common
+│   │   │       │   └── MenuView.js
+│   │   │       └── pages
+│   │   │           ├── AboutView.js
+│   │   │           ├── ContactView.js
+│   │   │           └── HomeView.js
+│   │   ├── main.js
+│   │   ├── router.js
+│   │   └── vendor
+│   │       ├── backbone
+│   │       │   └── backbone.js
+│   │       ├── jquery
+│   │       │   └── jquery.js
+│   │       ├── require
+│   │       │   ├── require.js
+│   │       │   └── text.js
+│   │       └── underscore
+│   │           └── underscore.js
+│   └── templates
 │       ├── common
-│       │   └── MenuView.js
+│       │   └── menuTemplate.html
 │       └── pages
-│           ├── AboutView.js
-│           ├── ContactView.js
-│           └── HomeView.js
-└── templates
-    ├── common
-    │   └── menuTemplate.html
-    └── pages
-        ├── aboutTemplate.html
-        ├── contactTemplate.html
-        └── homeTemplate.html
+│           ├── aboutTemplate.html
+│           ├── contactTemplate.html
+│           └── homeTemplate.html
+└── package.json
 
-14 directories, 23 files
+16 directories, 24 files
 ```
 
 ## Biblioteki
