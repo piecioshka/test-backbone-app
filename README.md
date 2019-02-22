@@ -1,6 +1,7 @@
 # Przykładowa aplikacja z użyciem Backbone
 
-Przykładowa aplikacja w stylu: Single Page Application.
+:ledger: Przykładowa aplikacja w stylu: Single Page Application.
+
 Demonstracja jak łatwo można stworzyć w pełni działającą aplikację SPA.
 
 ## Budowa aplikacji
