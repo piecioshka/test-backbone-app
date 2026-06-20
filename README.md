@@ -58,3 +58,7 @@ Demonstracja jak łatwo można stworzyć w pełni działającą aplikację SPA.
 * [jQuery.js](http://jquery.com/)
 * [Require.js](http://requirejs.org/)
 * [Underscore.js](http://underscorejs.org/)
+
+## License
+
+[The MIT License](http://piecioshka.mit-license.org) @ 2026
