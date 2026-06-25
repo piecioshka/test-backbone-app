@@ -61,4 +61,4 @@ Demonstracja jak łatwo można stworzyć w pełni działającą aplikację SPA.
 
 ## License
 
-[The MIT License](http://piecioshka.mit-license.org) @ 2026
+[The MIT License](https://piecioshka.mit-license.org) @ 2026
